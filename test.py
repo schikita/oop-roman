@@ -3,13 +3,13 @@
 from main import Person, Rectangle, BankAccount, Car, Point
 
 def test_person():
-    # TODO: Создай объект с именем "Alice", возрастом 30, полом "female"
-    # TODO: Вызови метод greet и проверь результат
-    pass
+    p = Person('Alice', 30, 'female')
 
-def test_rectangle():
-    # TODO: Прямоугольник 3x4 → площадь 12, периметр 14
-    pass
+    assert p.name == 'Alice'
+    assert p.age == 30
+    assert p.gender == "female"
+
+    assert p.greet() == "Hi, I'm Alice, 30 years old."
 
 def test_bank_account():
     # TODO: Пополнить счёт, снять часть, проверить остаток
@@ -25,7 +25,7 @@ def test_point():
 
 def run_tests():
     test_person()
-    test_rectangle()
+    # test_rectangle()
     test_bank_account()
     test_car()
     test_point()

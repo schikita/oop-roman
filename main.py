@@ -3,13 +3,13 @@
 # Задание 1: Класс "Человек"
 class Person:
     def __init__(self, name: str, age: int, gender: str):
-        # TODO: Сохрани имя, возраст и пол в атрибутах экземпляра
+        self.name = name
+        self.age = age
+        self.gender = gender
         pass
 
     def greet(self):
-        # TODO: Верни строку вида "Hi, I'm {name}, {age} years old."
-        pass
-
+        return f"Hi, I'm {self.name}, {self.age} years old."
 
 # Задание 2: Класс "Прямоугольник"
 class Rectangle:
